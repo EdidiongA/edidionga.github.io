@@ -1,244 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio Website</title>
-	
-	<!-- bootstrap css -->
-	 <link href="bootstrap5/css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- bootstrap js -->
-	<script src="bootstrap5/js/bootstrap.min.js"  type="text/javascript"> </script>
-	
-    <!-- box icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edidiong-Abasi Anwanane | Machine Learning, MLOps and Infrastructure Engineer</title>
+  <meta name="description" content="Edidiong-Abasi Anwanane is a machine learning and infrastructure engineer. Georgia Tech MSc, NeurIPS workshop author, Kaggle silver medallist, builder of production AI systems and the paretoeval open-source project.">
+  <meta name="author" content="Edidiong-Abasi Anwanane">
+  <meta property="og:title" content="Edidiong-Abasi Anwanane">
+  <meta property="og:description" content="Machine learning, MLOps and enterprise infrastructure. Projects, publications and competitions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://edidionga.github.io/">
+  <meta property="og:image" content="https://edidionga.github.io/assets/profile.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">MyPortfolio</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark" aria-hidden="true">EA</span>
+      <span>Edidiong Anwanane</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    <nav class="nav" id="siteNav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#future">Future work</a>
+      <a href="#earlier">Earlier career</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+<main id="top">
 
-        <nav class="navbar">
-            <a href="#home">Home</a>
-        	<a href="#about">About</a>
-        	<a href="#publications">Publications</a>
-			<a href="#projects">Projects</a>
-        	<!-- <a href="#cv">CV</a> -->
-        	<a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="hero-copy">
+        <p class="hero-kicker">Machine learning, MLOps and enterprise infrastructure</p>
+        <h1 id="hero-title">Edidiong-Abasi<br>Anwanane<br><span class="thin">builds AI systems that ship with their receipts.</span></h1>
+        <p class="hero-lede">I train models, deploy them, evaluate them honestly, and run the infrastructure they depend on. Fifteen years of production operations and a Georgia Tech MSc in Computer Science, applied to problems where the evaluation matters as much as the model.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See the work</a>
+          <a class="btn btn-ghost" href="https://github.com/EdidiongA" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/edidiong-abasi-anwanane/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="hero-stats" aria-label="Highlights">
+          <div class="stat"><strong>Silver</strong><span>Kaggle medal, top 4% of 6,125 teams</span></div>
+          <div class="stat"><strong>NeurIPS</strong><span>Black in AI Workshop author</span></div>
+          <div class="stat"><strong>15+ yrs</strong><span>Enterprise infrastructure</span></div>
+        </div>
+      </div>
+      <div class="hero-figure">
+        <img src="assets/profile.png" alt="Portrait of Edidiong-Abasi Anwanane" width="630" height="910" fetchpriority="high">
+      </div>
+    </div>
+  </section>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello, It's Me</h3>
-            <h1>Edidiong-Abasi Anwanane</h1>
-			<h3>I wear many hats!</h3>
-            <h3>I do <span class="multiple-text"></span></h3>
-            <p>I love art, so anything that has to do with design fascinates me! I use Python a lot, but I also use some other languages here and there - like Java, SQL, HTML, JavaScript and CSS. I have also worked in several industries - ranging from Oil/Energy to non-profit organizations in different roles. To learn more about me, step into my world!</p>
-            <div class="social-media">
-                <a href="https://web.facebook.com/edidiongabasi.anwanane/"><i class="bx bxl-facebook"></i></a>
-                <a href="https://twitter.com/EdidiongAA"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.instagram.com/themandidiaa/"><i class="bx bxl-instagram-alt"></i></a>
-                <a href="https://www.linkedin.com/in/edidiong-abasi-anwanane/"><i class="bx bxl-linkedin"></i></a>
+  <!-- About -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div>
+        <div class="section-head">
+          <h2 id="about-title">About</h2>
+        </div>
+        <p>I am a machine learning and infrastructure engineer based in Lagos, Nigeria. For fifteen years I have been the sole technical owner of the enterprise infrastructure at the West African Institute for Financial and Economic Management (WAIFEM), a regional institution that trains central bankers and finance officials across five countries in partnership with the IMF, the World Bank and the African Development Bank. I run everything from identity management and virtualization to fibre-optic and satellite links, with round-the-clock accountability.</p>
+        <p>In 2024 I completed an MSc in Computer Science at Georgia Tech, specializing in Interactive Intelligence: machine learning, knowledge-based AI and human-computer interaction. Since then I have turned that training into applied work: a Kaggle silver medal in geosteering prediction, an accepted CLEF working note in bioacoustics, an open-source cost-aware evaluation library, and a set of production AI systems that ship with their evaluation harnesses and failure taxonomies.</p>
+        <p>What connects it all is a conviction that AI systems should be honest about what they do not know. I build for abstention, instrumentation and evaluation first, and for the real conditions of the places I have worked: constrained bandwidth, tight budgets and users who need to check an answer, not trust it.</p>
+        <p>I am open to senior roles in MLOps, ML platform engineering, applied machine learning and digital transformation, whether remote or with relocation.</p>
+      </div>
+      <aside class="facts" aria-label="At a glance">
+        <dl>
+          <div><dt>Based in</dt><dd>Lagos, Nigeria</dd></div>
+          <div><dt>Education</dt><dd>MSc Computer Science, Georgia Tech (2024); BSc Computer Science, Babcock University</dd></div>
+          <div><dt>Current role</dt><dd>Assistant Head of IT and Senior Infrastructure Engineer, WAIFEM</dd></div>
+          <div><dt>Focus</dt><dd>MLOps, LLM evaluation, applied ML, cloud and Kubernetes</dd></div>
+        </dl>
+        <div class="pill-row" aria-label="Core tools">
+          <span class="pill">Python</span><span class="pill">PyTorch</span><span class="pill">scikit-learn</span><span class="pill">LangChain</span><span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">Terraform</span><span class="pill">AWS</span><span class="pill">TypeScript</span><span class="pill">SQL</span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Highlights band -->
+  <section class="section tight band" aria-labelledby="hl-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="hl-title">Recent results</h2>
+        <p>Verifiable outcomes from the last year of applied work.</p>
+      </div>
+      <div class="highlights">
+        <div class="highlight"><div class="big">241 / 6,125</div><div class="label">ROGII Wellbore Geology Prediction</div><p class="sub">Silver medal, top 4%. Rose 3,039 places on the private leaderboard.</p></div>
+        <div class="highlight"><div class="big">CLEF 2026</div><div class="label">BirdCLEF+ working note accepted</div><p class="sub">Empirical study of ensemble diversity on frozen foundation-model embeddings.</p></div>
+        <div class="highlight"><div class="big">3 systems</div><div class="label">Production AI portfolio</div><p class="sub">RAG, bounded agent and data pipeline, each with a running evaluation suite.</p></div>
+        <div class="highlight"><div class="big">paretoeval</div><div class="label">Open-source library</div><p class="sub">Cost-aware evaluation for LLM applications, with regression gates in CI.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="projects-title">Projects</h2>
+        <p>Every project links to its public repository. Competition entries show the results as scored on the private leaderboard.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">Applied AI and MLOps</button>
+        <button class="filter-btn" data-filter="competition">Competitions</button>
+        <button class="filter-btn" data-filter="research">Research and ML</button>
+        <button class="filter-btn" data-filter="systems">Software and systems</button>
+        <button class="filter-btn" data-filter="security">Security</button>
+      </div>
+
+      <div class="projects" id="projectGrid">
+
+        <!-- Production AI systems (featured) -->
+        <article class="card featured" data-cat="ai">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><circle cx="7" cy="7" r="1"/><circle cx="7" cy="17" r="1"/></svg></div>
+            <span class="tag brass">Featured</span>
+          </div>
+          <h3>Production AI Systems: With the Receipts</h3>
+          <p>Three deployable AI systems that solve real problems, each shipped with its evaluation harness, its failure taxonomy and the bugs that were found, including bugs in the evaluator itself. Helio is a cited, schema-validated solar advisory RAG that abstains instead of guessing. AssetPilot is a bounded multi-tool agent with hard budgets, five stop conditions and a per-step audit trail. Clearline is a data pipeline that validates messy multi-source exports into an AI-ready store with a per-run quality score.</p>
+          <div class="scoreboard">
+            <div><strong>79.2%</strong><span>RAG accuracy, zero false answers</span></div>
+            <div><strong>10 / 10</strong><span>Agent tasks incl. 3 failure injections</span></div>
+            <div><strong>343x</strong><span>Error in a naive load the pipeline catches</span></div>
+          </div>
+          <div class="stack"><span>Python</span><span>Pydantic</span><span>BM25</span><span>LLM (live + mock)</span><span>Terraform</span><span>CI evals</span><span>18 test gates</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/production-ai-systems" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- paretoeval -->
+        <article class="card" data-cat="ai">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M4 18 L10 10 L14 14 L20 6"/><path d="M4 21h16"/></svg></div>
+            <span class="tag">Open source</span>
+          </div>
+          <h3>paretoeval</h3>
+          <p>Cost-aware evaluation for LLM applications. Scores quality per dollar, attributes cost across every pipeline stage including retries, models self-hosted GPU economics with utilisation, and fails the build when cost or quality regresses. Composes with Ragas, DeepEval, tokencost and OpenTelemetry backends.</p>
+          <div class="stack"><span>Python</span><span>pytest plugin</span><span>OpenTelemetry</span><span>Apache 2.0</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/paretoeval" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Powerline -->
+        <article class="card" data-cat="ai systems">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M13 2 L4 14h7l-1 8 9-12h-7z"/></svg></div>
+            <span class="tag">Hackathon 2026</span>
+          </div>
+          <h3>Powerline: Alexa+ home power copilot</h3>
+          <p>A stateful MCP server that makes a household solar inverter conversational. Answers "can I run the iron for 30 minutes?" with a real forecast, plans the day's appliances around solar surplus, learns the local grid pattern and pushes server-initiated low-battery alerts. Supports Growatt and Victron hardware with a built-in simulator. Built for the Amazon Developer Hackathon 2026.</p>
+          <div class="stack"><span>TypeScript</span><span>MCP (Streamable HTTP)</span><span>MCP Apps</span><span>Amazon Bedrock</span><span>38 tests</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/powerline" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- ROGII -->
+        <article class="card" data-cat="competition research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5 7 22l5-3 5 3-1.5-7.5"/></svg></div>
+            <span class="tag brass">Silver medal</span>
+          </div>
+          <h3>Blind-Zone TVT Prediction in Horizontal Wells</h3>
+          <p>Kaggle ROGII Wellbore Geology Prediction. A change of coordinates turns a noisy regression into a tracking problem; a second-order hidden-state tracker follows structural position and dip through a banded trellis, fused with drift-cancelling and spatial-field branches. Runs on one CPU core at about four seconds per well. Entered with one month left in the competition.</p>
+          <div class="scoreboard">
+            <div><strong>241</strong><span>of 6,125 teams</span></div>
+            <div><strong>+3,039</strong><span>places at private reveal</span></div>
+            <div><strong>45%</strong><span>error reduction vs baseline</span></div>
+          </div>
+          <div class="stack"><span>Python</span><span>NumPy</span><span>Beam search</span><span>Signal processing</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/wellbore-tvt-prediction" target="_blank" rel="noopener">Repository</a>
+            <a href="https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction" target="_blank" rel="noopener">Competition</a>
+          </div>
+        </article>
+
+        <!-- BirdCLEF -->
+        <article class="card" data-cat="competition research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M3 12c4-6 9-8 18-8-2 6-6 10-12 12-2 1-4 0-6-4z"/><path d="M9 16l-3 5"/></svg></div>
+            <span class="tag brass">Paper accepted</span>
+          </div>
+          <h3>BirdCLEF+ 2026: Late-Entry Solution and Ensemble-Diversity Study</h3>
+          <p>Multi-taxon acoustic species identification in the Brazilian Pantanal. Entered solo with two weeks left on free-tier compute. Extracted Perch v2 embeddings over 10,658 soundscapes, trained a custom head with pseudo-labelling, and documented a controlled negative result: apparent ensemble diversity on a shared frozen representation lives in noise, not complementary signal. The code behind an accepted CLEF 2026 working note.</p>
+          <div class="scoreboard">
+            <div><strong>0.9406</strong><span>private ROC-AUC</span></div>
+            <div><strong>1,313 / 4,092</strong><span>final rank</span></div>
+            <div><strong>+119</strong><span>places at private reveal</span></div>
+          </div>
+          <div class="stack"><span>Python</span><span>Perch v2</span><span>Bioacoustics</span><span>Pseudo-labelling</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Birdclef-2026" target="_blank" rel="noopener">Repository</a>
+            <a href="https://www.kaggle.com/competitions/birdclef-2026" target="_blank" rel="noopener">Competition</a>
+          </div>
+        </article>
+
+        <!-- Amadioha -->
+        <article class="card" data-cat="research ai">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+            <span class="tag brass">NeurIPS 2019</span>
+          </div>
+          <h3>Amadioha: Open-Domain Question Answering for Civic Engagement</h3>
+          <p>A two-stage question answering system over a curated corpus of 1.3 million Nigerian news articles: BM25 retrieval in Apache Solr followed by a fine-tuned BERT span extractor. Includes linguistic error analysis on Nigerian English, bias evaluation of answer availability across entities, and an explainability audit so every answer shows its source. Presented at the Black in AI Workshop, NeurIPS 2019.</p>
+          <div class="stack"><span>BERT</span><span>Apache Solr</span><span>BM25</span><span>NLP</span></div>
+          <div class="card-links">
+            <a href="docs/Amadioha_NLP_for_Citizen_Engagement.pdf" target="_blank" rel="noopener">Paper (PDF)</a>
+          </div>
+        </article>
+
+        <!-- Raven's -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><rect x="3" y="3" width="8" height="8"/><circle cx="17" cy="7" r="4"/><path d="M3 21l4-8 4 8z"/><rect x="13" y="13" width="8" height="8" rx="4"/></svg></div>
+            <span class="tag">Georgia Tech</span>
+          </div>
+          <h3>Cognitive Visual Reasoning Agent for Raven's Progressive Matrices</h3>
+          <p>A hybrid symbolic-perceptual agent that solves visual IQ puzzles from raw images. Contour extraction and object segmentation feed a relational representation; a shape-agnostic transformation engine covering rotation, reflection, XOR and progression drives a generate-and-test loop modelled on analogical reasoning and rule-based inference.</p>
+          <div class="stack"><span>Python</span><span>OpenCV</span><span>Knowledge-Based AI</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Knowledge-Based-Artificial-Intelligence---Solving-Ravens-Progressive-Matrices-problems" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Supervised -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><circle cx="7" cy="7" r="1.5"/><circle cx="17" cy="17" r="1.5"/><circle cx="17" cy="7" r="1.5"/></svg></div>
+            <span class="tag">Georgia Tech</span>
+          </div>
+          <h3>Comparative Study of Supervised Learning Algorithms</h3>
+          <p>Decision trees, random forests, gradient boosting, SVMs, neural networks and kNN benchmarked across datasets with hyperparameter sweeps, learning curves, bias-variance analysis and cross-validation, with attention to interpretability versus performance.</p>
+          <div class="stack"><span>scikit-learn</span><span>Python</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Supervised-Machine-Learning" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- RL -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M4 12h6l3-6 3 12 3-6h1"/></svg></div>
+            <span class="tag">Georgia Tech</span>
+          </div>
+          <h3>Reinforcement Learning and Markov Decision Processes</h3>
+          <p>Policy iteration, value iteration and Q-learning implemented from scratch and evaluated across reward structures, transition dynamics, discount factors and exploration schedules, with visualization of convergence and policy behaviour.</p>
+          <div class="stack"><span>Python</span><span>MDPs</span><span>Q-learning</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Markov-Decision-Processes-and-Reinforcement-Learning" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Unsupervised -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><circle cx="11" cy="17" r="3"/></svg></div>
+            <span class="tag">Georgia Tech</span>
+          </div>
+          <h3>Unsupervised Learning and Dimensionality Reduction</h3>
+          <p>k-means, Gaussian mixture models, ICA, PCA, t-SNE and random projection applied across two datasets, with reduced representations fed into downstream neural network training to test when each technique recovers meaningful latent structure.</p>
+          <div class="stack"><span>scikit-learn</span><span>Python</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Unsupervised-Machine-Learning" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Randomized optimization -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M3 17c3-8 6-8 9 0s6 8 9 0"/></svg></div>
+            <span class="tag">Georgia Tech</span>
+          </div>
+          <h3>Randomized Optimization</h3>
+          <p>Genetic algorithms, simulated annealing and randomized hill climbing compared across optimization landscapes, then applied to neural network weight tuning, with analysis of temperature schedules and exploration versus exploitation.</p>
+          <div class="stack"><span>Python</span><span>Metaheuristics</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Randomized-Optimization" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Fairness -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M12 3v18M4 8h16M6 8l-3 6h6zM18 8l-3 6h6z"/></svg></div>
+            <span class="tag">Responsible AI</span>
+          </div>
+          <h3>AI Fairness and Bias Auditing with IBM AIF360</h3>
+          <p>Audited demographic bias in two real-world datasets, Taiwan credit allocation and the Mental Health in Tech survey, using statistical parity difference, disparate impact and consistency metrics, then applied pre-processing mitigation and measured the accuracy-fairness trade-off.</p>
+          <div class="stack"><span>AI Fairness 360</span><span>Python</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/AI_Fairness_and_Bias" target="_blank" rel="noopener">Credit dataset</a>
+            <a href="https://github.com/EdidiongA/AI_Fairness_and_Bias_Mental_Health" target="_blank" rel="noopener">Mental health dataset</a>
+          </div>
+        </article>
+
+        <!-- Multimodal -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><rect x="3" y="5" width="8" height="14" rx="2"/><path d="M14 8h7M14 12h7M14 16h5"/></svg></div>
+            <span class="tag">Multimodal</span>
+          </div>
+          <h3>Word2Vec and Facial Recognition: Cross-Modal Experiments</h3>
+          <p>Combined language embeddings from Google Word2Vec with vision embeddings from the UTK facial dataset to explore multimodal similarity spaces and emergent associations between image and text domains.</p>
+          <div class="stack"><span>Word2Vec</span><span>Computer vision</span><span>Python</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/AI_ML_Word2Vec_FacialRecognition" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Toxicity -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M4 6h16M4 12h10M4 18h13"/></svg></div>
+            <span class="tag">NLP</span>
+          </div>
+          <h3>Toxicity Analysis on Wikipedia Talk Pages</h3>
+          <p>Data analysis and inferential statistics on a 127,820-comment dataset produced by a natural language toxicity classifier, including error analysis on misclassified toxic and non-toxic comments.</p>
+          <div class="stack"><span>Python</span><span>Statistics</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Data_Analysis_Toxicity" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Custody deaths -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg></div>
+            <span class="tag">Statistics</span>
+          </div>
+          <h3>Fairness Analysis of Deaths in Custody, California</h3>
+          <p>Statistical and fairness analysis in Python of deaths that occur in custody or during arrest in California, using the state Department of Justice open data.</p>
+          <div class="stack"><span>Python</span><span>Pandas</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Data_Statistical_Analysis" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- Facebook ads -->
+        <article class="card" data-cat="research">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
+            <span class="tag">NLP</span>
+          </div>
+          <h3>Ad Information Retrieval with Transformers</h3>
+          <p>A transformer-based retrieval pipeline that classifies personal ad-targeting data into categories such as technology, education, health and housing, as an exercise in applying pretrained language models to personal data analysis.</p>
+          <div class="stack"><span>Transformers</span><span>Python</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/Facebook_Ad_Info_Retrieval" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- GameSwap -->
+        <article class="card" data-cat="systems">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M4 8h16l-2 10H6z"/><path d="M8 8V5h8v3"/></svg></div>
+            <span class="tag">Full stack</span>
+          </div>
+          <h3>GameSwap: Peer-to-Peer Game Bartering Platform</h3>
+          <p>Built across three phases from EER and information-flow diagrams to a relational schema to a working application: MySQL backend, Angular and Node.js frontend, Spring Boot and Java application layer, with black-box and white-box testing throughout.</p>
+          <div class="stack"><span>Java</span><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/GameSwap_Full_Project" target="_blank" rel="noopener">Full project</a>
+            <a href="https://github.com/EdidiongA/GameSwap" target="_blank" rel="noopener">Backend</a>
+          </div>
+        </article>
+
+        <!-- JobCompare -->
+        <article class="card" data-cat="systems">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+            <span class="tag">Android</span>
+          </div>
+          <h3>JobCompare: Weighted Job Offer Comparison App</h3>
+          <p>An Android application for multi-criteria comparison of job offers. Owned the UML class diagrams, deployment and component architecture, and the wireframes for the full user journey, with SQLite persistence and agile delivery.</p>
+          <div class="stack"><span>Java</span><span>Android</span><span>SQLite</span></div>
+          <div class="card-links">
+            <a href="https://github.com/EdidiongA/JobCompare" target="_blank" rel="noopener">Repository</a>
+          </div>
+        </article>
+
+        <!-- GoPhish -->
+        <article class="card" data-cat="security">
+          <div class="card-top">
+            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0E1B2E" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <span class="tag">Information security</span>
+          </div>
+          <h3>Penetration Testing Campaign with GoPhish</h3>
+          <p>A controlled phishing campaign deployed on a hardened Ubuntu VPS with domain hosting, SSL provisioning and authenticated SMTP relay, covering campaign design, landing pages, credential-capture analysis and reporting against authorised targets.</p>
+          <div class="stack"><span>GoPhish</span><span>Linux</span><span>SSL/TLS</span><span>SMTP</span></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section" id="publications" aria-labelledby="pubs-title" style="background: var(--paper-2);">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="pubs-title">Publications</h2>
+        <p>Peer-reviewed and workshop papers, with preprints where available.</p>
+      </div>
+      <div class="pubs">
+
+        <article class="pub">
+          <div class="year">2026</div>
+          <div>
+            <span class="status">Accepted, CLEF 2026 Working Notes</span>
+            <h3>Leveraging Public Resources as a Late Entrant in BirdCLEF+ 2026: An Empirical Study of Embedding-Space Ensemble Diversity and Its Limits</h3>
+            <div class="venue">Anwanane, E. CLEF 2026 Working Notes (LifeCLEF / BirdCLEF+), CEUR-WS Proceedings.</div>
+            <p>Documents a controlled negative result: a custom head on Perch v2 embeddings looked like a strong ensemble member on every standalone metric yet reduced the blend at every weight. When downstream models share one frozen representation, their outputs can decorrelate freely while label-relevant information stays bottlenecked upstream. Link added on publication.</p>
+            <div class="pub-links"><a href="https://github.com/EdidiongA/Birdclef-2026" target="_blank" rel="noopener">Code</a></div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="year">2026</div>
+          <div>
+            <span class="status">Preprint, arXiv link forthcoming</span>
+            <h3>Blind-Zone TVT Prediction in Horizontal Wells: A Structural-Coordinate Tracker with Deployment-Side Dose Calibration, and a Three-Way Study of Why Leaderboards Disagree</h3>
+            <div class="venue">Anwanane, E. Preprint from the Kaggle ROGII Wellbore Geology Prediction competition (silver medal, 241 of 6,125).</div>
+            <p>Reparameterises thickness prediction as structural-coordinate tracking, fuses a second-order hidden-state tracker with drift-cancelling and spatial-field branches, and shows how submissions can be spent as measurements: a transfer law linking local validation to leaderboard scores predicted the public-tier collapse in writing before the private reveal.</p>
+            <div class="pub-links"><a href="https://github.com/EdidiongA/wellbore-tvt-prediction" target="_blank" rel="noopener">Code and preprint</a></div>
+          </div>
+        </article>
+
+        <article class="pub">
+          <div class="year">2019</div>
+          <div>
+            <span class="status">NeurIPS 2019, 2nd Black in AI Workshop</span>
+            <h3>Amadioha: An Open Domain Question Answering Tool for Encouraging Citizen Participation in Developing Countries</h3>
+            <div class="venue">Dibia, V. and Anwanane, E. NeurIPS 2019, Black in AI Workshop, Vancouver, Canada.</div>
+            <p>A retrieval-and-reading question answering system over a curated 1.3 million article Nigerian news corpus, with linguistic error analysis on Nigerian English variants, bias evaluation and an explainability audit, presented as a civic-tech tool for public policy transparency.</p>
+            <div class="pub-links">
+              <a href="docs/Amadioha_NLP_for_Citizen_Engagement.pdf" target="_blank" rel="noopener">Paper (PDF)</a>
+              <a href="https://media.neurips.cc/Conferences/NeurIPS2019/DiversityBrochure2019.pdf" target="_blank" rel="noopener">NeurIPS workshop brochure</a>
             </div>
-            <a href="docs/EdidiongAbasi_Anwanane_Resume_(3 pages)_Github.pdf" class="btn">Download CV</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Future work -->
+  <section class="section" id="future" aria-labelledby="future-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="future-title">Future work</h2>
+        <p>Projects in progress and commitments already on the calendar. More detail will be published here as each one matures.</p>
+      </div>
+      <div class="future">
+
+        <article class="card">
+          <div class="when">2027</div>
+          <h3>ARC Prize 2027 and ARC-AGI-4</h3>
+          <p>A structured campaign toward the 2027 edition of the ARC Prize, expected to introduce the ARC-AGI-4 benchmark alongside the continuing ARC-AGI-3 track. Preparation began in 2026 with a local evaluation harness, a reading programme through the ARC technical reports, and reimplementation of prize-winning solutions. The targets are the paper award, the milestone prizes for open-source solutions and a Kaggle medal. More information in due course.</p>
+        </article>
+
+        <article class="card">
+          <div class="when">In development</div>
+          <h3>Sentinel: Vehicle and Aircraft Safety Monitoring Systems</h3>
+          <p>Two safety-monitoring systems more than a year in development: an aircraft crash-prevention system and a vehicle safety monitor, now in production-readiness verification with handoff documentation. The near-term goal is peer-reviewed validation through an aerospace venue before any discussion with operators or manufacturers. More information in due course.</p>
+        </article>
+
+        <article class="card">
+          <div class="when">Papers in preparation</div>
+          <h3>Forthcoming publications</h3>
+          <p>AttentionProbe, a cognitive-attention benchmark for language models developed during the Kaggle "Measuring Progress Toward AGI: Cognitive Abilities" competition, is being expanded into conference submissions. The ROGII wellbore preprint is being prepared for arXiv and journal submission, and the BirdCLEF+ working note will be followed by an extended study of representational orthogonality in ensembles. Titles and venues will be announced on acceptance.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Earlier career -->
+  <section class="section" id="earlier" aria-labelledby="earlier-title" style="background: var(--paper-2);">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="earlier-title">Earlier career and credentials</h2>
+        <p>The foundation underneath the current work: engineering, enterprise networking and the certifications that came with it.</p>
+      </div>
+      <div class="earlier-grid">
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="date">2011 to present</div>
+            <h3>West African Institute for Financial and Economic Management (WAIFEM), Lagos</h3>
+            <p>Assistant Head of IT and Senior Infrastructure Engineer. Sole technical owner of enterprise infrastructure serving five West African central banks, including identity management, virtualization, Microsoft Exchange, Cisco enterprise switching, fibre-optic and VSAT links, HD telepresence, storage and backup, and the e-Learning platform built with UNITAR.</p>
+          </div>
+          <div class="tl-item">
+            <div class="date">2010 to 2011</div>
+            <h3>Shell Petroleum Development Company, Port Harcourt</h3>
+            <p>Trainee Instrumentation Engineer under the NNPC and Nigerian Content Development and Monitoring Board programme. Produced FEED and detailed design specifications for eight upstream projects, including SCADA architecture, fire and gas mapping, safety-instrumented systems, and field inspections at four production facilities.</p>
+          </div>
+          <div class="tl-item">
+            <div class="date">2008 to 2009</div>
+            <h3>Energy Commission of Nigeria (The Presidency), Abuja</h3>
+            <p>Network and Help Desk Support Officer. Managed LAN infrastructure, supported the Energy Information Systems team and contributed to international energy reporting workshops.</p>
+          </div>
+          <div class="tl-item">
+            <div class="date">2023</div>
+            <h3>NITDA and Coursera Scholarship</h3>
+            <p>Recipient of the National Information Technology Development Agency (NITDA) and Coursera scholarship programme for training in User Interface and User Experience design and Entrepreneurship, June to December 2023.</p>
+          </div>
         </div>
-
-        <div class="home-img">
-            <img src="images/home.png" alt="">
+        <div>
+          <h3 style="margin-bottom:12px;">Certifications</h3>
+          <ul class="cert-list">
+            <li><span>Social/Behavioral Research Investigators and Key Personnel, CITI Program (BRANY)</span><span>2019</span></li>
+            <li><span>Cisco Certified Network Professional (CCNP)</span><span>2015</span></li>
+            <li><span>Cisco Certified Network Associate (CCNA)</span><span>2015</span></li>
+            <li><span>MCSA, Windows Server 2012</span><span>2015</span></li>
+            <li><span>Microsoft Certified Technology Specialist, Business Desktop Deployment</span><span>2009</span></li>
+            <li><span>Microsoft Certified Professional</span><span>2008</span></li>
+            <li><span>CompTIA Network+</span><span>2007</span></li>
+          </ul>
+          <h3 style="margin:26px 0 12px;">Professional memberships</h3>
+          <ul class="cert-list">
+            <li><span>Institute of Electrical and Electronics Engineers (IEEE)</span><span>Member</span></li>
+            <li><span>International Society of Automation (ISA)</span><span>Member</span></li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/about.png" alt="">
+  <!-- Contact -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="contact-side">
+        <div class="section-head">
+          <h2 id="contact-title">Contact</h2>
+          <p>For roles, collaboration, speaking or research conversations. Messages go straight to my inbox.</p>
         </div>
-
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <!-- <h3>Frontend Developer!</h3> -->
-          <p>I have a Bachelor of Science (BSc) degree in Computer Science from Babcock University, Nigeria which was obtained in 2008. I also hold a Master of Science in Computer Science (MSCS) degree from the Georgia Institute of Technology, Atlanta, Georgia (2018 to 2024). I hold a number of IT certifications namely: CompTIA Network+ certification (2007), Microsoft Certified Professional (2008), Microsoft Certified Technology Specialist (Business Desktop Deployment) (2009), MCSA – Microsoft Certified Solutions Associate (Windows Server 2012) (2015), Cisco Certified Network Associate (2015), Cisco Certified Network Professional (2015) and Social/Behavioral Research Investigators and Key Personnel (CITI Program, A Division of BRANY) (2019). I am a member of the Institute of Electrical and Electronics Engineers (IEEE) and the International Society of Automation (ISA). I am currently the Assistant Systems Administrator at the West African Institute for Financial and Economic Management (WAIFEM) (2011 to date) and I have worked at the Shell Petroleum Development Company Ltd as a Instrumentation Engineer under the NNPC/Nigerian Content Development and Monitoring Board from 2010 to 2011. I was selected to participate in the Google Computer Science Research Mentorship programme (September to December 2022) and I am a recipient of the National Information Technology Development Agency (NITDA)/Coursera scholarship program for training in User Interface/User Experience development and design and Entrepreneurship (June to December 2023). I have carried out a number of notable projects in the following areas - Android application development, database application development, UI/UX design, penetration testing, data science and artificial intelligence/machine learning. Click the button below to learn more! </p>
-            <a href="docs/EdidiongAbasi_Anwanane_Resume_(3 pages)_Github.pdf" class="btn">Learn More</a>
+        <a href="mailto:didianwanane@gmail.com">didianwanane@gmail.com</a>
+        <a href="https://www.linkedin.com/in/edidiong-abasi-anwanane/" target="_blank" rel="noopener">linkedin.com/in/edidiong-abasi-anwanane</a>
+        <a href="https://github.com/EdidiongA" target="_blank" rel="noopener">github.com/EdidiongA</a>
+        <a href="https://www.kaggle.com/" target="_blank" rel="noopener">Kaggle profile</a>
+      </div>
+      <form class="contact" id="contactForm" action="https://formsubmit.co/ajax/didianwanane@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New message from edidionga.github.io">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
         </div>
-    </section>
-
-    <!-- publications section design -->
-    <section class="publications" id="publications">
-        <h2 class="heading">My <span>Publications</span></h2>
-
-        <div class="publications-container">
-            <div class="publications-box">
-                <i class="bx bxs-book"></i>
-                <h3>Amadioha: An Open Domain Question Answering Tool for
-Encouraging Citizen Participation in Developing Countries</h3>
-                <p>Victor Dibia, Edidiong Abasi Anwanane (December 2019) - NeurIPS Conference, Vancouver Canada, 2nd Black in AI Workshop (<a href="https://media.neurips.cc/Conferences/NeurIPS2019/DiversityBrochure2019.pdf">View publication brochure</a>)</p>
-                <a href="docs/Long_Paper__Amadioha__NLP_for_Citizen_Engagement.pdf" class="btn">View paper</a>
-            </div>
-            
+        <div class="field">
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
         </div>
-    </section>
-
-	<div class="container">
-		<div class="row">
-			<div class="col" style="background-color:blue;">
-				
-			</div>
-			<div class="col"></div>
-		
-		</div>
-	</div>
-	
-<!-- projects section design -->
-    <section class="projects" id="projects">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="projects-container">
-			<div class="container-fluid">
-				<div class="row">
-                  <div class="col-md-6">
-                      <div class="projects-box">
-                          <img src="images/portfolio1.jpg" alt="">
-                          <div class="projects-layer">
-                              <h4>AI Fairness and Bias (using Python)</h4>
-                              <p> The use of machine learning regression classifier models and the AI Fairness 360 toolkit to calculate Statistical Parity Difference and Disparate Impact fairness metrics (fairness measures) for fairness and bias in the Taiwan Credit allocations dataset (dataset obtained from the UC Urvine Machine Learning repository) - April 2023.</p>
-                              <a href="https://github.com/EdidiongA/AI_Fairness_and_Bias"><i class="bx bx-link-external"></i></a>
-                          </div>
-                      </div>
-                  </div>
-				  <div class="col-md-6">
-                  <div class="projects-box">
-                    <img src="images/portfolio2.jpg" alt="">
-                    <div class="projects-layer">
-                        <h4>AI/ML Word2Vec and FacialRecognition(using Python)</h4>
-                        <p>The application of Artificial Intelligence/Machine Learning algorithms to two applications – Google’s deep learning Word2vec word embeddings system and a facial recognition system using the UTK dataset. The pre-trained Word2vec model (based on the Google News dataset) was obtained from Google Code. The UTK dataset was obtained from UTKFace - March 2023</p>
-                        <a href="https://github.com/EdidiongA/AI_ML_Word2Vec_FacialRecognition"><i class="bx bx-link-external"></i></a>
-                    </div>
-                  </div>
-				</div>
-				</div>
-				
-          		<div class="row">
-                  <div class="col-md-6">
-                     <div class="projects-box">
-                        <img src="images/portfolio3.jpg" alt="">
-                        <div class="projects-layer">
-                            <h4>Data Analysis on Toxicity(using Python)</h4>
-                            <p>Data and inferential statistical analysis using Python on a natural language classifier built to identify toxicity in comments from Wikipedia Talk Pages - March 2023</p>
-                            <a href="https://github.com/EdidiongA/Data_Analysis_Toxicity"><i class="bx bx-link-external"></i></a>
-                        </div>
-               	 	 </div>
-                  </div>
-			      <div class="col-md-6">
-                     <div class="projects-box">
-                        <img src="images/portfolio4.jpg" alt="">
-                        <div class="projects-layer">
-                            <h4>Data and Statistical Analysis (using Python)</h4>
-                            <p>Data and Statistical Analysis, using Python, on deaths that occur in custody or during the process of arrest in California (dataset source - https://openjustice.doj.ca.gov/data) - February 2023</p>
-                            <a href="https://github.com/EdidiongA/Data_Statistical_Analysis"><i class="bx bx-link-external"></i></a>
-                        </div>
-                    </div>
-              	  </div>
-           		</div>
-		   
-				<div class="row">
-                  <div class="col-md-6">
-                  	  <div class="projects-box">
-                      <img src="images/portfolio4.jpg" alt="">
-                      <div class="projects-layer">
-                          <h4>Facebook Ad Info Retrieval (using Python)</h4>
-                          <p>The use of a natural langauge processing transformer model (Wikipedia transformer model) to retrieve Facebook ad information from my personal Facebook profile in certain categories - January 2023</p>
-                          <a href="https://github.com/EdidiongA/Facebook_Ad_Info_Retrieval"><i class="bx bx-link-external"></i></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="projects-box">
-                        <img src="images/portfolio5.jpg" alt="">
-                        <div class="projects-layer">
-                            <h4>Penetration testing with GoPhish</h4>
-                            <p>A penetration testing campaign developed using GoPhish (an email phishing platform), set up on a remote Linux VPS complete with domain hosting, a digital certificate (for the domain) and email authentication - September 2022.</p>
-                            <a href="#"><i class="bx bx-link-external"></i></a>
-                        </div>
-                	  </div>
-                  </div>
-           		</div>				
-				
-		  		<div class="row">
-                  <div class="col-md-6">
-                      <div class="projects-box">
-                        <img src="images/portfolio6.jpg" alt="">
-                        <div class="projects-layer">
-                            <h4>GameSwap</h4>
-                            <p>a bartering database web application created with Angular/Node.js (frontend), Java and MySQL (backend) for trading board games, video game systems, and other home entertainment gaming items - April 2022.</p>
-                            <a href="https://github.com/EdidiongA/GameSwap_Full_Project"><i class="bx bx-link-external"></i></a>
-                        </div>
-                	  </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="projects-box">
-                        <img src="images/portfolio6.jpg" alt="">
-                        <div class="projects-layer">
-                            <h4>JobCompare</h4>
-                            <p>Android application which compares different jobs or job offers based on an algorithm that calculates the weights of several aspects of each job such as job title, company name, location, overall living costs, commute time, yearly salary and yearly bonus - August 2020.</p>
-                            <a href="https://github.com/EdidiongA/JobCompare"><i class="bx bx-link-external"></i></a>
-                        </div>
-                	  </div>
-                  </div>
-           		</div>							
-			</div>						
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
         </div>
-    </section>
+        <button class="btn btn-dark" type="submit" id="sendBtn">Send message</button>
+        <p class="form-note">Your message is delivered to didianwanane@gmail.com. No account or sign-up needed.</p>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+</main>
 
-        <form action="process_form.php" method="post">
-            <div class="input-box">
-                <input type="text" name="full_name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" name="mobile_number" placeholder="Mobile Number">
-                <input type="text" name="email_subject" placeholder="Email Subject">
-            </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
+<footer class="site-footer">
+  <div class="container">
+    <div>Edidiong-Abasi Anwanane. Lagos, Nigeria. <span id="year"></span></div>
+    <div class="social" aria-label="Profiles">
+      <a href="https://github.com/EdidiongA" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.76.12 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.05.78 2.12v3.14c0 .31.2.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/edidiong-abasi-anwanane/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+      <a href="mailto:didianwanane@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zM4 7v.5l8 5 8-5V7l-8 5z"/></svg></a>
+    </div>
+  </div>
+</footer>
 
-    <!-- footer design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 | All Rights Reserved.</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div>
-    </footer>
-
-
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
-
 </html>
